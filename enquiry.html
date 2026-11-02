@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>clubbrWear | Enquiry</title>
+<meta name="description" content="Send ClubbrWear an enquiry about products, sizes, quantities, custom clothing or bulk orders."><meta name="keywords" content="ClubbrWear product enquiry, custom clothing order">
+<meta name="author" content="clubbrWear student website project"><meta name="robots" content="index, follow">
+<link rel="canonical" href="https://example.com/clubbrwear/enquiry.html">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="images/clubbr1pic.jpeg" type="image/jpeg">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header><a href="index.html"><img src="images/clubbr1pic.jpeg" alt="clubbrWear logo" class="logo"></a><h1>clubbrWear</h1><p class="tagline">Cultivating a Brotherhood. An Aesthetic. A Standard.</p></header>
+<nav class="navbar" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="enquiry.html" class="active">Enquiry</a></li>
+<li><a href="contact.html">Contacts</a></li></ul></nav>
+<main id="main-content">
+<section><h2>Make an Enquiry</h2><p>Interested in ClubbrWear products or services? Complete the form and the page will show an estimated subtotal and response based on your selection.</p>
+<form id="enquiryForm" action="#" method="post" novalidate>
+<div class="form-row"><label for="name">Full Name *</label><input type="text" id="name" name="name" minlength="2" maxlength="70" required autocomplete="name"></div>
+<div class="form-row"><label for="email">Email Address *</label><input type="email" id="email" name="email" required autocomplete="email"></div>
+<div class="form-row"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" pattern="[0-9 +()-]{7,20}" title="Enter a phone number using digits, spaces, +, brackets or hyphens."></div>
+<div class="form-row"><label for="product">Enquiry Type *</label><select id="product" name="product" required><option value="">Choose an option</option><option value="tshirt">Signature T-Shirt — R350</option><option value="hoodie">Hoodie — R650</option><option value="tracksuit">Tracksuit — R900</option><option value="jacket">Jacket — R750</option><option value="cap">Cap — R250</option><option value="custom">Custom Clothing</option><option value="bulk">Bulk Order</option></select></div>
+<div class="form-row"><label for="size">Size</label><select id="size" name="size"><option value="Not specified">Not specified</option><option>Small</option><option>Medium</option><option>Large</option><option>XL</option><option>XXL</option></select></div>
+<div class="form-row"><label for="quantity">Quantity *</label><input type="number" id="quantity" name="quantity" min="1" max="100" value="1" required></div>
+<div class="form-row"><label for="message">Message *</label><textarea id="message" name="message" rows="5" minlength="5" maxlength="1000" placeholder="Tell us what you are looking for..." required></textarea></div>
+<p id="enquiryError" class="form-message error" role="alert"></p><button type="submit">Process Enquiry</button>
+</form><div id="enquiryResult" class="result-panel" aria-live="polite" hidden></div></section>
+</main>
+<footer class="footer"><p>&copy; 2026 clubbrWear | All rights reserved</p><p>Email: <a href="mailto:info@clubbrwear.co.za">info@clubbrwear.co.za</a></p><p>Website Project: clubbrWear</p><p><a href="sitemap.xml">Sitemap</a></p></footer>
+<script src="js/script.js" defer></script>
+</body>
+</html>
